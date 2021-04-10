@@ -4,14 +4,20 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <p>{{ message }}</p>
+    <counter></counter>
   </div>
 </template>
 
 <!--script is optional-->
 <script>
+//@: in order to enter the src folder
+import Counter from '@/components/Counter';
 //App.vue is run by default
 export default {
   name: 'App',
+  components: {
+    Counter
+  },
   data() {
     return {
       message: 'Hello World of Vue!'
