@@ -1,12 +1,12 @@
 <template>
     <div class="container">
-        <button class="btn btn-success btn-block" @click="$store.commit('increment')">
+        <button class="btn btn-success btn-block" @click="$store.commit('increment', 1)">
             Increment
         </button>
         <div class="alert alert-secondary text-center mt-3">
             {{ $store.state.counter }}
         </div>
-        <button class="btn btn-danger btn-block"  @click="$store.commit('decrement')">
+        <button class="btn btn-danger btn-block"  @click="$store.commit('decrement', 1)">
             Decrement
         </button>
     </div>

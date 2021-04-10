@@ -14,11 +14,11 @@ export default new Vuex.Store({
   },
   //mutations are used to alter the state
   mutations: {
-    increment(state) {
-      state.counter += 1;
+    increment(state, qty) {
+      state.counter += qty;
     },
-    decrement(state) {
-      state.counter -= 1;
+    decrement(state, qty) {
+      state.counter -= qty;
     }
   },
   //actions are used to make asynchronous queries to servers
