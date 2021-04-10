@@ -3,7 +3,7 @@
 <!--<div id="app"> this refers to App.vue-->
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <p>{{ message }}</p>
+    <p>{{ $store.state.counter }}</p>
     <counter></counter>
   </div>
 </template>
@@ -17,11 +17,6 @@ export default {
   name: 'App',
   components: {
     Counter
-  },
-  data() {
-    return {
-      message: 'Hello World of Vue!'
-    }
   }
 }
 </script>
