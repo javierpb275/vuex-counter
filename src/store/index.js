@@ -10,7 +10,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   //state is the data of our app
   state: {
-    counter: 0
+    counter: 0,
+    appName: 'COUNTER'
   },
   //mutations are used to alter the state
   mutations: {
