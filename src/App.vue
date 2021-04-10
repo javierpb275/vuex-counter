@@ -22,7 +22,7 @@ export default {
 
 <!--style is optional-->
 <!--preprocessor of styles chosen is stylus. and here we are refering to #app-->
-<style  lang="stylus" scoped>
+<style  lang="stylus">
 #app
   font-family Avenir, Helvetica, Arial, sans-serif
   -webkit-font-smoothing antialiased
